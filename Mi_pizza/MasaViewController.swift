@@ -9,6 +9,12 @@
 import UIKit
 
 class MasaViewController: UIViewController {
+    
+    
+    @IBOutlet var masaTab: UITabBarItem!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

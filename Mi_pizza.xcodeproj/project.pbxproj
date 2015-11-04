@@ -11,6 +11,9 @@
 		81552D1F1BE9D0F7003AE02F /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D1E1BE9D0F7003AE02F /* IngredientesViewController.swift */; };
 		81552D211BE9D145003AE02F /* ConfirmacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D201BE9D145003AE02F /* ConfirmacionViewController.swift */; };
 		81552D231BE9D173003AE02F /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D221BE9D173003AE02F /* ResultadoViewController.swift */; };
+		81552D281BE9D688003AE02F /* imgGrande.png in Resources */ = {isa = PBXBuildFile; fileRef = 81552D251BE9D688003AE02F /* imgGrande.png */; };
+		81552D291BE9D688003AE02F /* imgMediano.png in Resources */ = {isa = PBXBuildFile; fileRef = 81552D261BE9D688003AE02F /* imgMediano.png */; };
+		81552D2A1BE9D688003AE02F /* imgChico.png in Resources */ = {isa = PBXBuildFile; fileRef = 81552D271BE9D688003AE02F /* imgChico.png */; };
 		81E051AB1BE9B34A00255155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051AA1BE9B34A00255155 /* AppDelegate.swift */; };
 		81E051AD1BE9B34A00255155 /* TamanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051AC1BE9B34A00255155 /* TamanoViewController.swift */; };
 		81E051AF1BE9B34A00255155 /* MasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051AE1BE9B34A00255155 /* MasaViewController.swift */; };
@@ -44,6 +47,9 @@
 		81552D1E1BE9D0F7003AE02F /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
 		81552D201BE9D145003AE02F /* ConfirmacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionViewController.swift; sourceTree = "<group>"; };
 		81552D221BE9D173003AE02F /* ResultadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoViewController.swift; sourceTree = "<group>"; };
+		81552D251BE9D688003AE02F /* imgGrande.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgGrande.png; sourceTree = "<group>"; };
+		81552D261BE9D688003AE02F /* imgMediano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgMediano.png; sourceTree = "<group>"; };
+		81552D271BE9D688003AE02F /* imgChico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgChico.png; sourceTree = "<group>"; };
 		81E051A71BE9B34A00255155 /* Mi_pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mi_pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E051AA1BE9B34A00255155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E051AC1BE9B34A00255155 /* TamanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamanoViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81552D241BE9D64A003AE02F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				81552D251BE9D688003AE02F /* imgGrande.png */,
+				81552D261BE9D688003AE02F /* imgMediano.png */,
+				81552D271BE9D688003AE02F /* imgChico.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		81E0519E1BE9B34A00255155 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +135,7 @@
 				81552D221BE9D173003AE02F /* ResultadoViewController.swift */,
 				81E051B01BE9B34A00255155 /* Main.storyboard */,
 				81E051B31BE9B34A00255155 /* Assets.xcassets */,
+				81552D241BE9D64A003AE02F /* images */,
 				81E051B51BE9B34A00255155 /* LaunchScreen.storyboard */,
 				81E051B81BE9B34A00255155 /* Info.plist */,
 			);
@@ -252,6 +269,9 @@
 			files = (
 				81E051B71BE9B34A00255155 /* LaunchScreen.storyboard in Resources */,
 				81E051B41BE9B34A00255155 /* Assets.xcassets in Resources */,
+				81552D2A1BE9D688003AE02F /* imgChico.png in Resources */,
+				81552D281BE9D688003AE02F /* imgGrande.png in Resources */,
+				81552D291BE9D688003AE02F /* imgMediano.png in Resources */,
 				81E051B21BE9B34A00255155 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
