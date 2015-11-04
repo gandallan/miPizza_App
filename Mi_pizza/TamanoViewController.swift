@@ -8,9 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
-        // mi segundo commit 
+class TamanoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

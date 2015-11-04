@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81552D1D1BE9D098003AE02F /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D1C1BE9D098003AE02F /* InicioViewController.swift */; };
+		81552D1F1BE9D0F7003AE02F /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D1E1BE9D0F7003AE02F /* IngredientesViewController.swift */; };
+		81552D211BE9D145003AE02F /* ConfirmacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D201BE9D145003AE02F /* ConfirmacionViewController.swift */; };
+		81552D231BE9D173003AE02F /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D221BE9D173003AE02F /* ResultadoViewController.swift */; };
 		81E051AB1BE9B34A00255155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051AA1BE9B34A00255155 /* AppDelegate.swift */; };
-		81E051AD1BE9B34A00255155 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051AC1BE9B34A00255155 /* FirstViewController.swift */; };
-		81E051AF1BE9B34A00255155 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051AE1BE9B34A00255155 /* SecondViewController.swift */; };
+		81E051AD1BE9B34A00255155 /* TamanoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051AC1BE9B34A00255155 /* TamanoViewController.swift */; };
+		81E051AF1BE9B34A00255155 /* MasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051AE1BE9B34A00255155 /* MasaViewController.swift */; };
 		81E051B21BE9B34A00255155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E051B01BE9B34A00255155 /* Main.storyboard */; };
 		81E051B41BE9B34A00255155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E051B31BE9B34A00255155 /* Assets.xcassets */; };
 		81E051B71BE9B34A00255155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E051B51BE9B34A00255155 /* LaunchScreen.storyboard */; };
 		81E051C21BE9B34A00255155 /* Mi_pizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051C11BE9B34A00255155 /* Mi_pizzaTests.swift */; };
 		81E051CD1BE9B34A00255155 /* Mi_pizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051CC1BE9B34A00255155 /* Mi_pizzaUITests.swift */; };
+		81E051DB1BE9BD1500255155 /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E051DA1BE9BD1500255155 /* QuesoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81552D1C1BE9D098003AE02F /* InicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		81552D1E1BE9D0F7003AE02F /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
+		81552D201BE9D145003AE02F /* ConfirmacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionViewController.swift; sourceTree = "<group>"; };
+		81552D221BE9D173003AE02F /* ResultadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoViewController.swift; sourceTree = "<group>"; };
 		81E051A71BE9B34A00255155 /* Mi_pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mi_pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E051AA1BE9B34A00255155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81E051AC1BE9B34A00255155 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		81E051AE1BE9B34A00255155 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		81E051AC1BE9B34A00255155 /* TamanoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamanoViewController.swift; sourceTree = "<group>"; };
+		81E051AE1BE9B34A00255155 /* MasaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasaViewController.swift; sourceTree = "<group>"; };
 		81E051B11BE9B34A00255155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81E051B31BE9B34A00255155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E051B61BE9B34A00255155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		81E051C81BE9B34A00255155 /* Mi_pizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mi_pizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E051CC1BE9B34A00255155 /* Mi_pizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mi_pizzaUITests.swift; sourceTree = "<group>"; };
 		81E051CE1BE9B34A00255155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E051DA1BE9BD1500255155 /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +110,13 @@
 			isa = PBXGroup;
 			children = (
 				81E051AA1BE9B34A00255155 /* AppDelegate.swift */,
-				81E051AC1BE9B34A00255155 /* FirstViewController.swift */,
-				81E051AE1BE9B34A00255155 /* SecondViewController.swift */,
+				81552D1C1BE9D098003AE02F /* InicioViewController.swift */,
+				81E051AC1BE9B34A00255155 /* TamanoViewController.swift */,
+				81E051AE1BE9B34A00255155 /* MasaViewController.swift */,
+				81E051DA1BE9BD1500255155 /* QuesoViewController.swift */,
+				81552D1E1BE9D0F7003AE02F /* IngredientesViewController.swift */,
+				81552D201BE9D145003AE02F /* ConfirmacionViewController.swift */,
+				81552D221BE9D173003AE02F /* ResultadoViewController.swift */,
 				81E051B01BE9B34A00255155 /* Main.storyboard */,
 				81E051B31BE9B34A00255155 /* Assets.xcassets */,
 				81E051B51BE9B34A00255155 /* LaunchScreen.storyboard */,
@@ -262,9 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81E051AF1BE9B34A00255155 /* SecondViewController.swift in Sources */,
+				81552D1F1BE9D0F7003AE02F /* IngredientesViewController.swift in Sources */,
+				81E051AF1BE9B34A00255155 /* MasaViewController.swift in Sources */,
+				81552D231BE9D173003AE02F /* ResultadoViewController.swift in Sources */,
+				81552D211BE9D145003AE02F /* ConfirmacionViewController.swift in Sources */,
 				81E051AB1BE9B34A00255155 /* AppDelegate.swift in Sources */,
-				81E051AD1BE9B34A00255155 /* FirstViewController.swift in Sources */,
+				81E051DB1BE9BD1500255155 /* QuesoViewController.swift in Sources */,
+				81552D1D1BE9D098003AE02F /* InicioViewController.swift in Sources */,
+				81E051AD1BE9B34A00255155 /* TamanoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +511,7 @@
 				81E051D31BE9B34A00255155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81E051D41BE9B34A00255155 /* Build configuration list for PBXNativeTarget "Mi_pizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +520,7 @@
 				81E051D61BE9B34A00255155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81E051D71BE9B34A00255155 /* Build configuration list for PBXNativeTarget "Mi_pizzaUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +529,7 @@
 				81E051D91BE9B34A00255155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
