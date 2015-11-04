@@ -11,11 +11,10 @@ import UIKit
 class MasaViewController: UIViewController {
     
     
-    @IBOutlet var masaTab: UITabBarItem!
+    @IBOutlet var tamañoPizza: UIImageView!
     
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,8 +23,8 @@ class MasaViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+ 
     }
-
 
 }
 

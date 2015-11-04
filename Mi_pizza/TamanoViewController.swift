@@ -14,7 +14,6 @@ class TamanoViewController: UIViewController {
     @IBOutlet var tamanoChico: UIImageView!
     
     
-    
     @IBAction func ChicoButton(sender: UIButton) {
         
         
