@@ -14,6 +14,16 @@ class MasaViewController: UIViewController {
     @IBOutlet var tamañoPizza: UIImageView!
     
     
+    var tamañoMasa: UIImage?
+    
+    override func viewWillAppear(animated: Bool) {
+        
+       tamañoPizza.image = tamañoMasa
+        
+        
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
