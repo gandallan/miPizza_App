@@ -38,16 +38,15 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let sigVista = segue.destinationViewController as! MasaViewController
-        sigVista.tamañoMasa = self.tamanoChico?.image
+        sigVista.tamañoMasa = self.tamanoChico!.image
         
         
     }
     
-    
-    
-   
 
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

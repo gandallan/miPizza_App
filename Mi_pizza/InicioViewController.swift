@@ -10,7 +10,16 @@ import UIKit
 
 class InicioViewController: UIViewController {
     
-    
+    //funcionpara cambiar de pantalla por medio de codigo
+    @IBAction func ViewToTamaño(sender: UIButton) {
+        //este hace referencia al Storyboard
+        let miStoryBoard: UIStoryboard =  UIStoryboard(name: "Main", bundle: nil)
+        //este 
+        let VistaTamaño = miStoryBoard.instantiateViewControllerWithIdentifier("ViewTamaño") as! TamanoViewController
+        
+        self.navigationController!.pushViewController(VistaTamaño, animated: true)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +32,8 @@ class InicioViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+
     
 
     /*
