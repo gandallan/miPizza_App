@@ -106,13 +106,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hng-s1-yuB">
-                                <rect key="frame" x="116" y="211" width="142" height="142"/>
+                                <rect key="frame" x="36" y="245" width="142" height="142"/>
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HX-t2-zia">
                                 <rect key="frame" x="44" y="543" width="42" height="42"/>
                                 <animations/>
                                 <state key="normal" image="imgChico.png"/>
+                                <connections>
+                                    <action selector="masaDelgadaButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="JYt-6o-BmI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delgada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN1-Tz-1nC">
                                 <rect key="frame" x="36" y="588" width="59" height="21"/>
@@ -126,11 +129,17 @@
                                 <rect key="frame" x="166" y="543" width="42" height="42"/>
                                 <animations/>
                                 <state key="normal" image="imgChico.png"/>
+                                <connections>
+                                    <action selector="masaCrujuenteButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="oAm-ZY-ymJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQr-Pc-W82">
                                 <rect key="frame" x="294" y="543" width="42" height="42"/>
                                 <animations/>
                                 <state key="normal" image="imgChico.png"/>
+                                <connections>
+                                    <action selector="masaGruesaButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="3KG-wO-JBz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crujiente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4d-G2-287">
                                 <rect key="frame" x="157" y="591" width="62" height="21"/>
@@ -148,6 +157,10 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6t0-ih-KLT">
+                                <rect key="frame" x="213" y="245" width="142" height="142"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -163,6 +176,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tamañoPizza" destination="Hng-s1-yuB" id="ve3-qi-5HD"/>
+                        <outlet property="tipoDeMasa" destination="6t0-ih-KLT" id="HIh-QZ-gwa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -249,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i47-U8-lc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1965.5" y="919.5"/>
+            <point key="canvasLocation" x="1975.5" y="919.5"/>
         </scene>
         <!--Ingredientes-->
         <scene sceneID="28M-L0-FoR">
