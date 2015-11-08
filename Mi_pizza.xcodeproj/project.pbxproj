@@ -10,6 +10,15 @@
 		8102DAE71BEC657C00E1AE3C /* masaCrujiente.png in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAE41BEC657C00E1AE3C /* masaCrujiente.png */; };
 		8102DAE81BEC657C00E1AE3C /* masaDelgada.png in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAE51BEC657C00E1AE3C /* masaDelgada.png */; };
 		8102DAE91BEC657C00E1AE3C /* masaGruesa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAE61BEC657C00E1AE3C /* masaGruesa.png */; };
+		8102DAEE1BEFFCF800E1AE3C /* img_cheddar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAEA1BEFFCF800E1AE3C /* img_cheddar.jpg */; };
+		8102DAEF1BEFFCF800E1AE3C /* img_mozzarela.png in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAEB1BEFFCF800E1AE3C /* img_mozzarela.png */; };
+		8102DAF01BEFFCF800E1AE3C /* img_parmesano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAEC1BEFFCF800E1AE3C /* img_parmesano.jpg */; };
+		8102DAF41BF00FCC00E1AE3C /* img_aceitunas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAF21BF00FCC00E1AE3C /* img_aceitunas.jpg */; };
+		8102DAF51BF00FCC00E1AE3C /* img_cebolla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAF31BF00FCC00E1AE3C /* img_cebolla.jpg */; };
+		8102DAF71BF00FD500E1AE3C /* img_jamon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAF61BF00FD500E1AE3C /* img_jamon.png */; };
+		8102DAFB1BF00FDF00E1AE3C /* img_pavo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAF81BF00FDF00E1AE3C /* img_pavo.jpg */; };
+		8102DAFC1BF00FDF00E1AE3C /* img_peperoni.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAF91BF00FDF00E1AE3C /* img_peperoni.jpg */; };
+		8102DAFD1BF00FDF00E1AE3C /* img_salchicha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8102DAFA1BF00FDF00E1AE3C /* img_salchicha.jpg */; };
 		81552D1D1BE9D098003AE02F /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D1C1BE9D098003AE02F /* InicioViewController.swift */; };
 		81552D1F1BE9D0F7003AE02F /* IngredientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D1E1BE9D0F7003AE02F /* IngredientesViewController.swift */; };
 		81552D211BE9D145003AE02F /* ConfirmacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81552D201BE9D145003AE02F /* ConfirmacionViewController.swift */; };
@@ -49,6 +58,15 @@
 		8102DAE41BEC657C00E1AE3C /* masaCrujiente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = masaCrujiente.png; sourceTree = "<group>"; };
 		8102DAE51BEC657C00E1AE3C /* masaDelgada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = masaDelgada.png; sourceTree = "<group>"; };
 		8102DAE61BEC657C00E1AE3C /* masaGruesa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = masaGruesa.png; sourceTree = "<group>"; };
+		8102DAEA1BEFFCF800E1AE3C /* img_cheddar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cheddar.jpg; sourceTree = "<group>"; };
+		8102DAEB1BEFFCF800E1AE3C /* img_mozzarela.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_mozzarela.png; sourceTree = "<group>"; };
+		8102DAEC1BEFFCF800E1AE3C /* img_parmesano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_parmesano.jpg; sourceTree = "<group>"; };
+		8102DAF21BF00FCC00E1AE3C /* img_aceitunas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_aceitunas.jpg; sourceTree = "<group>"; };
+		8102DAF31BF00FCC00E1AE3C /* img_cebolla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cebolla.jpg; sourceTree = "<group>"; };
+		8102DAF61BF00FD500E1AE3C /* img_jamon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_jamon.png; sourceTree = "<group>"; };
+		8102DAF81BF00FDF00E1AE3C /* img_pavo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_pavo.jpg; sourceTree = "<group>"; };
+		8102DAF91BF00FDF00E1AE3C /* img_peperoni.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_peperoni.jpg; sourceTree = "<group>"; };
+		8102DAFA1BF00FDF00E1AE3C /* img_salchicha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_salchicha.jpg; sourceTree = "<group>"; };
 		81552D1C1BE9D098003AE02F /* InicioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		81552D1E1BE9D0F7003AE02F /* IngredientesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesViewController.swift; sourceTree = "<group>"; };
 		81552D201BE9D145003AE02F /* ConfirmacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionViewController.swift; sourceTree = "<group>"; };
@@ -98,15 +116,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		81552D241BE9D64A003AE02F /* images */ = {
+		8102DAFE1BF00FE700E1AE3C /* Ingredientes */ = {
+			isa = PBXGroup;
+			children = (
+				8102DAF81BF00FDF00E1AE3C /* img_pavo.jpg */,
+				8102DAF91BF00FDF00E1AE3C /* img_peperoni.jpg */,
+				8102DAFA1BF00FDF00E1AE3C /* img_salchicha.jpg */,
+				8102DAF21BF00FCC00E1AE3C /* img_aceitunas.jpg */,
+				8102DAF31BF00FCC00E1AE3C /* img_cebolla.jpg */,
+				8102DAF61BF00FD500E1AE3C /* img_jamon.png */,
+			);
+			name = Ingredientes;
+			sourceTree = "<group>";
+		};
+		8102DAFF1BF0100B00E1AE3C /* Tamanos */ = {
 			isa = PBXGroup;
 			children = (
 				81552D251BE9D688003AE02F /* imgGrande.png */,
+				81552D261BE9D688003AE02F /* imgMediano.png */,
+				81552D271BE9D688003AE02F /* imgChico.png */,
+			);
+			name = Tamanos;
+			sourceTree = "<group>";
+		};
+		8102DB001BF0102E00E1AE3C /* Masa */ = {
+			isa = PBXGroup;
+			children = (
 				8102DAE41BEC657C00E1AE3C /* masaCrujiente.png */,
 				8102DAE51BEC657C00E1AE3C /* masaDelgada.png */,
 				8102DAE61BEC657C00E1AE3C /* masaGruesa.png */,
-				81552D261BE9D688003AE02F /* imgMediano.png */,
-				81552D271BE9D688003AE02F /* imgChico.png */,
+			);
+			name = Masa;
+			sourceTree = "<group>";
+		};
+		8102DB011BF0104100E1AE3C /* Queso */ = {
+			isa = PBXGroup;
+			children = (
+				8102DAEA1BEFFCF800E1AE3C /* img_cheddar.jpg */,
+				8102DAEB1BEFFCF800E1AE3C /* img_mozzarela.png */,
+				8102DAEC1BEFFCF800E1AE3C /* img_parmesano.jpg */,
+			);
+			name = Queso;
+			sourceTree = "<group>";
+		};
+		81552D241BE9D64A003AE02F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8102DB011BF0104100E1AE3C /* Queso */,
+				8102DB001BF0102E00E1AE3C /* Masa */,
+				8102DAFF1BF0100B00E1AE3C /* Tamanos */,
+				8102DAFE1BF00FE700E1AE3C /* Ingredientes */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -278,12 +337,21 @@
 			files = (
 				81E051B71BE9B34A00255155 /* LaunchScreen.storyboard in Resources */,
 				81E051B41BE9B34A00255155 /* Assets.xcassets in Resources */,
+				8102DAF51BF00FCC00E1AE3C /* img_cebolla.jpg in Resources */,
 				81552D2A1BE9D688003AE02F /* imgChico.png in Resources */,
+				8102DAFD1BF00FDF00E1AE3C /* img_salchicha.jpg in Resources */,
 				81552D281BE9D688003AE02F /* imgGrande.png in Resources */,
+				8102DAEF1BEFFCF800E1AE3C /* img_mozzarela.png in Resources */,
 				81552D291BE9D688003AE02F /* imgMediano.png in Resources */,
+				8102DAEE1BEFFCF800E1AE3C /* img_cheddar.jpg in Resources */,
+				8102DAFC1BF00FDF00E1AE3C /* img_peperoni.jpg in Resources */,
+				8102DAF41BF00FCC00E1AE3C /* img_aceitunas.jpg in Resources */,
 				8102DAE91BEC657C00E1AE3C /* masaGruesa.png in Resources */,
+				8102DAF71BF00FD500E1AE3C /* img_jamon.png in Resources */,
 				8102DAE81BEC657C00E1AE3C /* masaDelgada.png in Resources */,
 				81E051B21BE9B34A00255155 /* Main.storyboard in Resources */,
+				8102DAFB1BF00FDF00E1AE3C /* img_pavo.jpg in Resources */,
+				8102DAF01BEFFCF800E1AE3C /* img_parmesano.jpg in Resources */,
 				8102DAE71BEC657C00E1AE3C /* masaCrujiente.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Trenx.Mi-pizza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,6 +542,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Trenx.Mi-pizza";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

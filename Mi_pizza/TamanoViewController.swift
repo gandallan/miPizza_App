@@ -11,12 +11,20 @@ import UIKit
 class TamanoViewController: UIViewController,UITabBarDelegate {
     
 
+//***************************************** OUTLETS
+    
     @IBOutlet var tamanoChico: UIImageView?
     
+
+//***************************************** VARIABLES
+    
+    //*** Inicializador de mi variable tipo imagen.
     var myImage: UIImage = UIImage(named: "imgChico")!
     
+    //*** Inicializador de tamano
     var tamano = 0
     
+//*****************************************CiewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,18 +34,18 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
     
     }
     
-
+//************************************************* BOTONES
+    
     @IBAction func ChicoButton(sender: UIButton) {
         
         tamano = 1
-        
-        self.myImage = UIImage(named: "imgChico")!
     
     
         tamanoChico!.frame = CGRectMake(100, 200,50, 50)
         self.view.addSubview(tamanoChico!)
+        tamanoChico!.contentMode = .ScaleAspectFit
         
-        print(tamanoChico)
+    
 
     }
     
@@ -45,10 +53,9 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
         
         tamano = 2
         
-        //tamanoChico!.image = UIImage(named: "imgMediano")!
-        
         tamanoChico!.frame = CGRectMake(100, 200, 100, 100)
         self.view.addSubview(tamanoChico!)
+        tamanoChico!.contentMode = .ScaleAspectFit
         
         
     }
@@ -62,15 +69,18 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
 
         tamanoChico!.frame = CGRectMake(100, 200, 150, 150)
         self.view.addSubview(tamanoChico!)
+        tamanoChico!.contentMode = .ScaleAspectFit
 
 
     }
     
 
+//*************************************** PrepareForSegue
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         tamanoChico?.frame
+        
         self.view.addSubview(tamanoChico!)
         
         

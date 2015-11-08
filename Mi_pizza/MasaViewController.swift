@@ -9,32 +9,30 @@
 import UIKit
 
 class MasaViewController: UIViewController {
-    
-    
-    @IBOutlet var tipoDeMasa: UIImageView!
+
+//**************************************** OUTLETS
     
     @IBOutlet var tamañoPizza: UIImageView!
     
+    @IBOutlet var tipoDeMasa: UIImageView!
+
+//**************************************** VARIABLE
     
     var tamañoMasa: UIImage!
     
     var tamano:Int!
     
     var tam:CGSize!
-    
+
+//*************************************** ViewdidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
-        
         tamañoPizza = UIImageView(image: tamañoMasa)
-        
-       // tamañoPizza.image = tamañoMasa
-
-        // Do any additional setup after loading the view, typically from a nib.
-        print(" tam-->  \(tamano)")
+    
+    
+        //***************************************** SWITCH Tamano
         
         
         switch(tamano){
@@ -68,16 +66,13 @@ class MasaViewController: UIViewController {
             
         }
         
-               tipoDeMasa.image  = imageResize(UIImage(named: "masaDelgada")!, sizeChange: tam)
-        
-
+         tipoDeMasa.image  = imageResize(UIImage(named: "masaDelgada")!, sizeChange: tam)
+         tipoDeMasa.layer.zPosition = 1
+         
     }
 
-    //*** Esta función recibe los datos que van a aparecer de la vista TamanoViewController
-    override func viewWillAppear(animated: Bool) {
     
-        
-    }
+//*************************************** Funcion ******
     
     func imageResize(imageObj:UIImage, sizeChange:CGSize)-> UIImage {
         
@@ -92,6 +87,10 @@ class MasaViewController: UIViewController {
         return scaledImage
         
     }
+    
+    
+    
+//**************************************** BOTONES *******
     
     //*** Boton masaDelada
     func masaDelgadaButton(sender: UIButton) {
@@ -110,6 +109,29 @@ class MasaViewController: UIViewController {
     func masaGruesaButton(sender: UIButton) {
         
         tipoDeMasa.image = imageResize(UIImage(named: "masaGruesa")!, sizeChange: tam)
+        
+    }
+    
+    
+    
+    
+//********************************** ViewWillAppear
+    
+    //*** Esta función recibe los datos que van a aparecer de la vista TamanoViewController
+    override func viewWillAppear(animated: Bool) {
+        
+    }
+    
+//***************************************prepareForSegue
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let sigVistaQueso = segue.destinationViewController as! QuesoViewController
+        
+        sigVistaQueso.imageMasa = tipoDeMasa.image
+        
+        
+        
         
     }
     

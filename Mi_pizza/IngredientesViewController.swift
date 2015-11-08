@@ -9,19 +9,83 @@
 import UIKit
 
 class IngredientesViewController: UIViewController {
+    
+    
+//*****************************************Outlets
+    
+    @IBOutlet var viewTipoQueso: UIImageView!
+    
+    @IBOutlet var viewTipoIngredientes: UIImageView!
+    
+    
+    
+    
+//*****************************************VARIABLES
+    var botones = " "
+    
 
+    
+//****************************************ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //myScrollView.contentSize.height = 0
+        //myScrollView.contentSize.width = 20000
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+//******************************************* Botones
+    
+    
+    @IBAction func ingredientesBotones(sender: UIButton) {
+        
+        botones = (sender.titleLabel?.text!)!
+        
+        switch botones {
+        
+            case "jamon":
+                
+                
+                
+            print("jamon")
+            
+            case "peperoni":
+            
+            print("peperoni")
+            
+            case "pavo":
+            
+            print("pavo")
+            
+            case "salchicha":
+                
+            print("salchicha")
+            
+            case "aceitunas":
+            
+            print("aceitunas")
+            
+            case "cebolla":
+            
+            print("cebolla")
+            
+        default:
+            
+            print("no se seleccionó ningun boton")
+            
+            
+            
+        
+        }
+        
+        
     }
     
-
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
