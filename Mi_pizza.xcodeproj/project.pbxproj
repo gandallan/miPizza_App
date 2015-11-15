@@ -199,6 +199,7 @@
 				81E051AE1BE9B34A00255155 /* MasaViewController.swift */,
 				81E051DA1BE9BD1500255155 /* QuesoViewController.swift */,
 				81552D1E1BE9D0F7003AE02F /* IngredientesViewController.swift */,
+				81EF11E71BF9104D00321BB8 /* New Group */,
 				81552D201BE9D145003AE02F /* ConfirmacionViewController.swift */,
 				81552D221BE9D173003AE02F /* ResultadoViewController.swift */,
 				81E051B01BE9B34A00255155 /* Main.storyboard */,
@@ -226,6 +227,13 @@
 				81E051CE1BE9B34A00255155 /* Info.plist */,
 			);
 			path = Mi_pizzaUITests;
+			sourceTree = "<group>";
+		};
+		81EF11E71BF9104D00321BB8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

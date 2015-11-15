@@ -15,20 +15,23 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
     
     @IBOutlet var tamanoChico: UIImageView?
     
+    @IBOutlet var nextButton: UIBarButtonItem!
+    
 
 //***************************************** VARIABLES
     
-    //*** Inicializador de mi variable tipo imagen.
     var myImage: UIImage = UIImage(named: "imgChico")!
     
-    //*** Inicializador de tamano
     var tamano = 0
+    
+    var botones  = ""
     
 //*****************************************CiewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nextButton.enabled = false
         
         tamanoChico = UIImageView(image: myImage)
     
@@ -36,44 +39,56 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
     
 //************************************************* BOTONES
     
-    @IBAction func ChicoButton(sender: UIButton) {
+    
+    @IBAction func tamanoButtons(sender: UIButton) {
         
-        tamano = 1
-    
-    
-        tamanoChico!.frame = CGRectMake(100, 200,50, 50)
-        self.view.addSubview(tamanoChico!)
-        tamanoChico!.contentMode = .ScaleAspectFit
+       self.botones = (sender.titleLabel!.text!)
         
-    
-
+        switch botones{
+            
+            case "chico":
+                tamano = 1
+                
+                fieldTamano = " Chico"
+                
+                tamanoChico!.frame = CGRectMake(100, 200,50, 50)
+                self.view.addSubview(tamanoChico!)
+                tamanoChico!.contentMode = .ScaleAspectFit
+                nextButton.enabled = true
+                print("chico")
+            
+            case "mediano":
+                tamano = 2
+                
+                fieldTamano = "Mediano"
+                
+                tamanoChico!.frame = CGRectMake(100, 200, 100, 100)
+                self.view.addSubview(tamanoChico!)
+                tamanoChico!.contentMode = .ScaleAspectFit
+                nextButton.enabled = true
+                print("mediano")
+                
+            
+            case "grande":
+                tamano = 3
+                
+                fieldTamano = "Grande"
+                
+                //tamanoChico!.image = UIImage(named: "imgGrande")!
+                
+                tamanoChico!.frame = CGRectMake(100, 200, 150, 150)
+                self.view.addSubview(tamanoChico!)
+                tamanoChico!.contentMode = .ScaleAspectFit
+                nextButton.enabled = true
+                print("grande")
+            
+        default:
+            print("")
+            
+        }
+        
     }
-    
-    @IBAction func MedianoButton(sender: UIButton) {
-        
-        tamano = 2
-        
-        tamanoChico!.frame = CGRectMake(100, 200, 100, 100)
-        self.view.addSubview(tamanoChico!)
-        tamanoChico!.contentMode = .ScaleAspectFit
-        
-        
-    }
-    
-    @IBAction func grande(sender: UIButton) {
-        
-        tamano = 3
-        
-        //tamanoChico!.image = UIImage(named: "imgGrande")!
-        
 
-        tamanoChico!.frame = CGRectMake(100, 200, 150, 150)
-        self.view.addSubview(tamanoChico!)
-        tamanoChico!.contentMode = .ScaleAspectFit
-
-
-    }
-    
 
 //*************************************** PrepareForSegue
     
@@ -83,12 +98,12 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
         
         self.view.addSubview(tamanoChico!)
         
-        
         let sigVista = segue.destinationViewController as! MasaViewController
-        
-        
         sigVista.tamañoMasa = tamanoChico!.image
         sigVista.tamano = tamano
+        
+        //let sigVistaConfirmacion = segue.destinationViewController as! ConfirmacionViewController
+        //sigVistaConfirmacion.fieldTamano = fieldTamano
         
         
     }

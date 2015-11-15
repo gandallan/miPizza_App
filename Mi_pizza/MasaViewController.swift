@@ -16,18 +16,26 @@ class MasaViewController: UIViewController {
     
     @IBOutlet var tipoDeMasa: UIImageView!
 
+    @IBOutlet var nextButton: UIBarButtonItem!
+
+    @IBOutlet var defaultAlert: UILabel!
 //**************************************** VARIABLE
+    
+    var botones = ""
     
     var tamañoMasa: UIImage!
     
     var tamano:Int!
     
     var tam:CGSize!
+    
 
 //*************************************** ViewdidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.enabled = false
         
         tamañoPizza = UIImageView(image: tamañoMasa)
     
@@ -40,9 +48,10 @@ class MasaViewController: UIViewController {
         case 1:
             self.tamañoPizza.frame = CGRectMake(100, 200,50, 50)
             self.view.addSubview(self.tamañoPizza!)
-            
-            
+        
             tam=CGSizeMake(50,50)
+            
+            
             
         case 2:
             
@@ -50,6 +59,8 @@ class MasaViewController: UIViewController {
             self.view.addSubview(self.tamañoPizza!)
            
             tam=CGSizeMake(100,100)
+            
+        
             
             
         case 3:
@@ -60,13 +71,15 @@ class MasaViewController: UIViewController {
             tam=CGSizeMake(150, 150)
             
             
-        default:
             
+        default:
+            nextButton.enabled = false
             print("no hay un tamaño")
             
         }
         
          tipoDeMasa.image  = imageResize(UIImage(named: "masaDelgada")!, sizeChange: tam)
+        
          tipoDeMasa.layer.zPosition = 1
          
     }
@@ -92,26 +105,41 @@ class MasaViewController: UIViewController {
     
 //**************************************** BOTONES *******
     
-    //*** Boton masaDelada
-    func masaDelgadaButton(sender: UIButton) {
+    @IBAction func tipoMasaButtons(sender: AnyObject) {
         
-        tipoDeMasa.image = imageResize(UIImage(named: "masaDelgada")!, sizeChange: tam)
+        self.botones = (sender.titleLabel?!.text!)!
         
+        switch botones {
         
+            case "delgada":
+                
+                tipoDeMasa?.image = imageResize(UIImage(named: "masaDelgada")!, sizeChange: tam)
+                fieldMasa = "Delgada"
+                print("Delgada")
+            
+            nextButton.enabled = true
+            
+            case "crujiente":
+                
+                tipoDeMasa.image = imageResize(UIImage(named: "masaCrujiente")!, sizeChange: tam)
+                fieldMasa = "Crujiente"
+                print("crujiente")
+                
+            nextButton.enabled = true
+            
+            case "gruesa":
+                
+                tipoDeMasa.image = imageResize(UIImage(named: "masaGruesa")!, sizeChange: tam)
+                fieldMasa = "Gruesa"
+                print("gruesa")
+            
+            nextButton.enabled = true
+            
+        default:
+            
+            print("")
+        }
     }
-    //*** Boton masaCrujiente
-    func masaCrujuenteButton(sender: UIButton) {
-        
-        tipoDeMasa.image = imageResize(UIImage(named: "masaCrujiente")!, sizeChange: tam)
-        
-    }
-    //*** Boton masaGRuesa
-    func masaGruesaButton(sender: UIButton) {
-        
-        tipoDeMasa.image = imageResize(UIImage(named: "masaGruesa")!, sizeChange: tam)
-        
-    }
-    
     
     
     
@@ -122,6 +150,7 @@ class MasaViewController: UIViewController {
         
     }
     
+    
 //***************************************prepareForSegue
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -130,9 +159,10 @@ class MasaViewController: UIViewController {
         
         sigVistaQueso.imageMasa = tipoDeMasa.image
         
+        //let vistaConfirmacion = segue.destinationViewController as! ConfirmacionViewController
+        //vistaConfirmacion.fieldMasa = fieldMasa
         
-        
-        
+
     }
     
 }

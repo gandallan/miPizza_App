@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class QuesoViewController: UIViewController {
     
     
@@ -17,6 +18,7 @@ class QuesoViewController: UIViewController {
     
     @IBOutlet var viewTipoQueso: UIImageView?
     
+    @IBOutlet var nextButton: UIBarButtonItem!
     
 //****************************** VARIABLES
     
@@ -49,9 +51,12 @@ class QuesoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nextButton.enabled = false
+        
         viewTipoMasa?.image = imageMasa
         
         viewTipoQueso?.image = UIImage(named: "img_mozzarela")
+        
         
     }
     
@@ -67,21 +72,32 @@ class QuesoViewController: UIViewController {
         case "Mozarela" :
             
            viewTipoQueso?.image = UIImage(named: "img_mozzarela")
-            
+           
+           fieldQueso = " Mozarella"
             
             print("Mozarela")
+            
+            nextButton.enabled = true
         
         case "Cheddar" :
             
             viewTipoQueso?.image = UIImage(named: "img_cheddar.jpg")
             
+             fieldQueso = "Cheddar"
+            
+             nextButton.enabled = true
             
         case "Parmesano" :
             
             viewTipoQueso?.image = UIImage(named: "img_parmesano.jpg")
-        
+            
+             fieldQueso = "Parmesano"
+            
+             nextButton.enabled = true
         
         case "SinQueso" :
+            
+            nextButton.enabled = true
             
             viewTipoQueso?.image = UIImage(named: "sinqueso")
 
@@ -92,6 +108,26 @@ class QuesoViewController: UIViewController {
         }
         
     }
+    
+//***************************************prepareForSegue
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        let sigVista = segue.destinationViewController as! IngredientesViewController
+        sigVista.imageMasa = imageMasa
+        sigVista.imageQueso = viewTipoQueso?.image
+        
+        //************* hay que averiguar como mandar fieldQueso al fieldQueso de ConfirmacionViewController porque el segue que tiene no apunta a esta vista.
+        
+        //let vistaConfirmacion = segue.destinationViewController as! ConfirmacionViewController
+        //vistaConfirmacion.fieldQueso = fieldQueso
+        
+    }
+    
+    
+    
+    
    
 
     
