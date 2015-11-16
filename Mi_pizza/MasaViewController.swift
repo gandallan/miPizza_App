@@ -37,7 +37,7 @@ class MasaViewController: UIViewController {
         
         nextButton.enabled = false
         
-        //tamañoPizza = UIImageView(image: tamañoMasa)
+        //tamañoPizza = UIImageView(image: tamanoMasa)
     
     
         //***************************************** SWITCH Tamano

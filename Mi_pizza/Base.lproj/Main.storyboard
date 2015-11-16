@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2s0-29-oIK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamano_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2s0-29-oIK">
                                 <rect key="frame" x="-1" y="64" width="375" height="603"/>
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2P-82-BeA">
                                 <rect key="frame" x="45" y="566" width="32" height="32"/>
                                 <animations/>
-                                <state key="normal" title="chico" image="tamaño_masa.png"/>
+                                <state key="normal" title="chico" image="tamano_masa.png"/>
                                 <connections>
                                     <action selector="tamanoButtons:" destination="9pv-A4-QxB" eventType="touchUpInside" id="0lX-Oh-uLi"/>
                                 </connections>
@@ -32,7 +32,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-2T-Wpd">
                                 <rect key="frame" x="278" y="549" width="57" height="57"/>
                                 <animations/>
-                                <state key="normal" title="grande" image="tamaño_masa.png"/>
+                                <state key="normal" title="grande" image="tamano_masa.png"/>
                                 <connections>
                                     <action selector="tamanoButtons:" destination="9pv-A4-QxB" eventType="touchUpInside" id="gXT-rc-dQ6"/>
                                 </connections>
@@ -56,7 +56,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEx-Kc-YvR">
                                 <rect key="frame" x="166" y="557" width="41" height="41"/>
                                 <animations/>
-                                <state key="normal" title="mediano" image="tamaño_masa.png">
+                                <state key="normal" title="mediano" image="tamano_masa.png">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -117,7 +117,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8QT-JE-Ebo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamano_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8QT-JE-Ebo">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <animations/>
                             </imageView>
@@ -219,7 +219,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mhw-l1-Tdp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamano_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mhw-l1-Tdp">
                                 <rect key="frame" x="-1" y="64" width="375" height="603"/>
                                 <animations/>
                             </imageView>
@@ -337,7 +337,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-JH-kgh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamano_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-JH-kgh">
                                 <rect key="frame" x="-0.5" y="64" width="375" height="603"/>
                                 <animations/>
                             </imageView>
@@ -684,7 +684,6 @@
         <!--Navigation Controller-->
         <scene sceneID="YRp-Rf-bsl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1ms-hb-NjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YaB-HK-ImH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -698,6 +697,7 @@
                         <segue destination="cD9-DH-ZWA" kind="relationship" relationship="rootViewController" id="OC6-Zc-YWw"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ms-hb-NjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306.5" y="919.5"/>
         </scene>
@@ -723,7 +723,7 @@
         <image name="masaDelgada.png" width="826" height="866"/>
         <image name="masaGruesa.png" width="826" height="866"/>
         <image name="second" width="30" height="30"/>
-        <image name="tamaño_fondo.png" width="1125" height="2000"/>
-        <image name="tamaño_masa.png" width="835" height="864"/>
+        <image name="tamano_fondo.png" width="1125" height="2000"/>
+        <image name="tamano_masa.png" width="835" height="864"/>
     </resources>
 </document>

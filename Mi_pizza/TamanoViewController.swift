@@ -20,7 +20,7 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
 
 //***************************************** VARIABLES
     
-    var myImage: UIImage = UIImage(named: "tamaño_masa")!
+    var myImage: UIImage = UIImage(named: "tamano_masa")!
     
     var tamano = 0
     
@@ -74,7 +74,7 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
                 
                 fieldTamano = "Grande"
                 
-                //tamanoChico!.image = UIImage(named: "tamaño_masa")!
+                //tamanoChico!.image = UIImage(named: "tamano_masa")!
                 
                 tamanoChico!.frame = CGRectMake(100, 250, 200, 200)
                 self.view.addSubview(tamanoChico!)
