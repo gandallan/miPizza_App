@@ -42,6 +42,8 @@
 		81EF12131BF99C2A00321BB8 /* img_pavo.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF120D1BF99C2A00321BB8 /* img_pavo.png */; };
 		81EF12141BF99C2A00321BB8 /* img_peperoni.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF120E1BF99C2A00321BB8 /* img_peperoni.png */; };
 		81EF12151BF99C2A00321BB8 /* img_salchicha.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF120F1BF99C2A00321BB8 /* img_salchicha.png */; };
+		81EF12191BF9A22D00321BB8 /* fondoConformacion.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12181BF9A22D00321BB8 /* fondoConformacion.png */; };
+		81EF121B1BF9A2B700321BB8 /* cocinarButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF121A1BF9A2B700321BB8 /* cocinarButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		81EF120D1BF99C2A00321BB8 /* img_pavo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_pavo.png; sourceTree = "<group>"; };
 		81EF120E1BF99C2A00321BB8 /* img_peperoni.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_peperoni.png; sourceTree = "<group>"; };
 		81EF120F1BF99C2A00321BB8 /* img_salchicha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_salchicha.png; sourceTree = "<group>"; };
+		81EF12181BF9A22D00321BB8 /* fondoConformacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoConformacion.png; sourceTree = "<group>"; };
+		81EF121A1BF9A2B700321BB8 /* cocinarButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocinarButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +183,10 @@
 			children = (
 				81EF11F61BF9877F00321BB8 /* tamaño_fondo.png */,
 				81EF11F41BF9840000321BB8 /* tamaño_masa.png */,
+				81EF12181BF9A22D00321BB8 /* fondoConformacion.png */,
 				81EF11F21BF983F800321BB8 /* base_madera.png */,
 				81EF12081BF9964500321BB8 /* fondo_Ingredientes.png */,
+				81EF121A1BF9A2B700321BB8 /* cocinarButton.png */,
 				81EF11F01BF97E2500321BB8 /* inicio.png */,
 				81EF11EC1BF97CD000321BB8 /* buttonComenzar.png */,
 				8102DB011BF0104100E1AE3C /* Queso */,
@@ -370,6 +376,7 @@
 				81552D291BE9D688003AE02F /* imgMediano.png in Resources */,
 				81EF11ED1BF97CD000321BB8 /* buttonComenzar.png in Resources */,
 				81EF11F71BF9877F00321BB8 /* tamaño_fondo.png in Resources */,
+				81EF12191BF9A22D00321BB8 /* fondoConformacion.png in Resources */,
 				81EF12041BF9934F00321BB8 /* img_mozzarela.png in Resources */,
 				81EF11FC1BF98E2E00321BB8 /* masaDelgada.png in Resources */,
 				81EF11FD1BF98E2E00321BB8 /* masaGruesa.png in Resources */,
@@ -380,6 +387,7 @@
 				81EF12131BF99C2A00321BB8 /* img_pavo.png in Resources */,
 				81EF12051BF9934F00321BB8 /* img_parmesano.png in Resources */,
 				81E051B21BE9B34A00255155 /* Main.storyboard in Resources */,
+				81EF121B1BF9A2B700321BB8 /* cocinarButton.png in Resources */,
 				81EF11FF1BF98F6100321BB8 /* masaCrujiente.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
