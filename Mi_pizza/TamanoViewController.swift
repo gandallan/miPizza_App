@@ -20,7 +20,7 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
 
 //***************************************** VARIABLES
     
-    var myImage: UIImage = UIImage(named: "imgChico")!
+    var myImage: UIImage = UIImage(named: "tamaño_masa")!
     
     var tamano = 0
     
@@ -51,7 +51,7 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
                 
                 fieldTamano = " Chico"
                 
-                tamanoChico!.frame = CGRectMake(100, 200,50, 50)
+                tamanoChico!.frame = CGRectMake(100, 250,100, 100)
                 self.view.addSubview(tamanoChico!)
                 tamanoChico!.contentMode = .ScaleAspectFit
                 nextButton.enabled = true
@@ -62,7 +62,7 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
                 
                 fieldTamano = "Mediano"
                 
-                tamanoChico!.frame = CGRectMake(100, 200, 100, 100)
+                tamanoChico!.frame = CGRectMake(100, 250, 150, 150)
                 self.view.addSubview(tamanoChico!)
                 tamanoChico!.contentMode = .ScaleAspectFit
                 nextButton.enabled = true
@@ -74,9 +74,9 @@ class TamanoViewController: UIViewController,UITabBarDelegate {
                 
                 fieldTamano = "Grande"
                 
-                //tamanoChico!.image = UIImage(named: "imgGrande")!
+                //tamanoChico!.image = UIImage(named: "tamaño_masa")!
                 
-                tamanoChico!.frame = CGRectMake(100, 200, 150, 150)
+                tamanoChico!.frame = CGRectMake(100, 250, 200, 200)
                 self.view.addSubview(tamanoChico!)
                 tamanoChico!.contentMode = .ScaleAspectFit
                 nextButton.enabled = true

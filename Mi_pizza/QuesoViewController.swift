@@ -55,7 +55,7 @@ class QuesoViewController: UIViewController {
         
         viewTipoMasa?.image = imageMasa
         
-        viewTipoQueso?.image = UIImage(named: "img_mozzarela")
+        viewTipoQueso?.image = UIImage(named: "")
         
         
     }
@@ -81,7 +81,7 @@ class QuesoViewController: UIViewController {
         
         case "Cheddar" :
             
-            viewTipoQueso?.image = UIImage(named: "img_cheddar.jpg")
+            viewTipoQueso?.image = UIImage(named: "img_cheddar")
             
              fieldQueso = "Cheddar"
             
@@ -89,7 +89,7 @@ class QuesoViewController: UIViewController {
             
         case "Parmesano" :
             
-            viewTipoQueso?.image = UIImage(named: "img_parmesano.jpg")
+            viewTipoQueso?.image = UIImage(named: "img_parmesano")
             
              fieldQueso = "Parmesano"
             

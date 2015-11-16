@@ -37,7 +37,7 @@ class MasaViewController: UIViewController {
         
         nextButton.enabled = false
         
-        tamañoPizza = UIImageView(image: tamañoMasa)
+        //tamañoPizza = UIImageView(image: tamañoMasa)
     
     
         //***************************************** SWITCH Tamano
@@ -46,29 +46,29 @@ class MasaViewController: UIViewController {
         switch(tamano){
             
         case 1:
-            self.tamañoPizza.frame = CGRectMake(100, 200,50, 50)
+            self.tamañoPizza.frame = CGRectMake(100, 250,100, 100)
             self.view.addSubview(self.tamañoPizza!)
         
-            tam=CGSizeMake(50,50)
+            tam=CGSizeMake(100,100)
             
             
             
         case 2:
             
-            self.tamañoPizza.frame = CGRectMake(100, 200,100, 100)
+            self.tamañoPizza.frame = CGRectMake(100, 250,150, 150)
             self.view.addSubview(self.tamañoPizza!)
            
-            tam=CGSizeMake(100,100)
+            tam=CGSizeMake(150,150)
             
         
             
             
         case 3:
             
-            self.tamañoPizza.frame = CGRectMake(100, 200,150, 150)
+            self.tamañoPizza.frame = CGRectMake(100, 250,200, 200)
             self.view.addSubview(self.tamañoPizza!)
             
-            tam=CGSizeMake(150, 150)
+            tam=CGSizeMake(200, 200)
             
             
             

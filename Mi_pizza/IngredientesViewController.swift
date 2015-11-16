@@ -27,6 +27,12 @@ class IngredientesViewController: UIViewController {
     
     var imageMasa: UIImage!
     var imageQueso: UIImage!
+    var imageIngredientes:UIImage!
+    
+//    let ingredientes:[String:String] = [
+//    
+//        "ingrediente1": "jamon", "ingrediente2": "peperoni", "ingrediente3": "pavo", "ingrediente4": "salchicha", "ingrediente5":"aceitunas", "ingrediente6":"cebolla"
+//    ]
     
 
     
@@ -36,6 +42,8 @@ class IngredientesViewController: UIViewController {
         
         viewTipoMasa.image = imageMasa
         viewTipoQueso.image = imageQueso
+        viewTipoIngredientes.image = imageIngredientes
+        
         viewTipoIngredientes.layer.zPosition = 3
         viewTipoQueso.layer.zPosition = 2
         viewTipoMasa.layer.zPosition = 1
@@ -53,6 +61,9 @@ class IngredientesViewController: UIViewController {
     
     @IBAction func ingredientesBotones(sender: UIButton) {
         
+        
+        
+        
         botones = (sender.titleLabel?.text!)!
         
         switch botones {
@@ -64,12 +75,10 @@ class IngredientesViewController: UIViewController {
                 fieldIngrediente = "jamon"
                 
                 nextButton.enabled = true
-                
-            print("jamon")
             
             case "peperoni":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_peperoni.jpg")
+                viewTipoIngredientes.image = UIImage(named: "img_peperoni")
                 
                 fieldIngrediente = "peperoni"
                 
@@ -79,7 +88,7 @@ class IngredientesViewController: UIViewController {
             
             case "pavo":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_pavo.jpg")
+                viewTipoIngredientes.image = UIImage(named: "img_pavo")
                 
                 fieldIngrediente = "pavo"
                 
@@ -89,40 +98,40 @@ class IngredientesViewController: UIViewController {
             
             case "salchicha":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_salchicha.jpg")
+                viewTipoIngredientes.image = UIImage(named: "img_salchicha")
                 
                 fieldIngrediente = "salchicha"
                 
                 nextButton.enabled = true
+
                 
             print("salchicha")
             
             case "aceitunas":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_aceitunas.jpg")
+                viewTipoIngredientes.image = UIImage(named: "img_aceitunas")
                 
                 fieldIngrediente = "aceitunas"
                 
                 nextButton.enabled = true
+                
             
             print("aceitunas")
             
             case "cebolla":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_cebolla.jpg")
+                viewTipoIngredientes.image = UIImage(named: "img_cebolla")
                 
                 fieldIngrediente = "cebolla"
                 
                 nextButton.enabled = true
+
             
             print("cebolla")
             
         default:
             
             print("no se seleccionó ningun boton")
-            
-            
-            
         
         }
         
@@ -133,12 +142,12 @@ class IngredientesViewController: UIViewController {
         
         let sigVista = segue.destinationViewController as! ConfirmacionViewController
         
-        
-        
-        
+        sigVista.imageMasa = imageMasa
+        sigVista.imageQueso = imageQueso
+        sigVista.imageIngredientes = viewTipoIngredientes.image
     
-        
     }
+    
   
     
     

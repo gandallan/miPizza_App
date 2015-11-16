@@ -17,24 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2P-82-BeA">
-                                <rect key="frame" x="45" y="546" width="32" height="32"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2s0-29-oIK">
+                                <rect key="frame" x="-1" y="64" width="375" height="603"/>
                                 <animations/>
-                                <state key="normal" title="chico" image="imgChico.png"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2P-82-BeA">
+                                <rect key="frame" x="45" y="566" width="32" height="32"/>
+                                <animations/>
+                                <state key="normal" title="chico" image="tamaño_masa.png"/>
                                 <connections>
                                     <action selector="tamanoButtons:" destination="9pv-A4-QxB" eventType="touchUpInside" id="0lX-Oh-uLi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-2T-Wpd">
-                                <rect key="frame" x="278" y="529" width="57" height="57"/>
+                                <rect key="frame" x="278" y="549" width="57" height="57"/>
                                 <animations/>
-                                <state key="normal" title="grande" image="imgGrande.png"/>
+                                <state key="normal" title="grande" image="tamaño_masa.png"/>
                                 <connections>
                                     <action selector="tamanoButtons:" destination="9pv-A4-QxB" eventType="touchUpInside" id="gXT-rc-dQ6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAO-bd-ByH">
-                                <rect key="frame" x="39" y="586" width="45" height="21"/>
+                                <rect key="frame" x="39" y="606" width="45" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -42,15 +46,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mediano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA4-fU-sUA">
-                                <rect key="frame" x="154" y="586" width="59" height="21"/>
+                                <rect key="frame" x="154" y="606" width="59" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEx-Kc-YvR">
+                                <rect key="frame" x="166" y="557" width="41" height="41"/>
+                                <animations/>
+                                <state key="normal" title="mediano" image="tamaño_masa.png">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tamanoButtons:" destination="9pv-A4-QxB" eventType="touchUpInside" id="qgC-Lp-QjY"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grande" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRL-5e-z5C">
-                                <rect key="frame" x="276" y="586" width="59" height="21"/>
+                                <rect key="frame" x="276" y="606" width="59" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -68,16 +82,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEx-Kc-YvR">
-                                <rect key="frame" x="166" y="537" width="41" height="41"/>
-                                <animations/>
-                                <state key="normal" title="mediano" image="imgMediano.png">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="tamanoButtons:" destination="9pv-A4-QxB" eventType="touchUpInside" id="qgC-Lp-QjY"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -113,20 +117,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="8QT-JE-Ebo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <animations/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hng-s1-yuB">
-                                <rect key="frame" x="188" y="263" width="142" height="142"/>
+                                <rect key="frame" x="96" y="263" width="142" height="142"/>
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HX-t2-zia">
-                                <rect key="frame" x="44" y="543" width="42" height="42"/>
+                                <rect key="frame" x="46" y="567" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="delgada" image="imgChico.png"/>
+                                <state key="normal" title="delgada" image="masaDelgada.png"/>
                                 <connections>
                                     <action selector="tipoMasaButtons:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="0ni-z3-9uX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delgada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN1-Tz-1nC">
-                                <rect key="frame" x="36" y="588" width="59" height="21"/>
+                                <rect key="frame" x="38" y="612" width="59" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -134,31 +142,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIO-7h-euc">
-                                <rect key="frame" x="166" y="543" width="42" height="42"/>
+                                <rect key="frame" x="168" y="567" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="crujiente" image="imgChico.png"/>
+                                <state key="normal" title="crujiente" image="masaCrujiente.png"/>
                                 <connections>
                                     <action selector="tipoMasaButtons:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pHU-aB-nrj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQr-Pc-W82">
-                                <rect key="frame" x="294" y="543" width="42" height="42"/>
+                                <rect key="frame" x="296" y="567" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="gruesa" image="imgChico.png"/>
+                                <state key="normal" title="gruesa" image="masaGruesa.png"/>
                                 <connections>
                                     <action selector="tipoMasaButtons:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="41L-be-PFe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crujiente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4d-G2-287">
-                                <rect key="frame" x="157" y="591" width="62" height="21"/>
-                                <animations/>
-                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gruesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka7-oC-eBc">
-                                <rect key="frame" x="286" y="591" width="59" height="21"/>
+                                <rect key="frame" x="158" y="612" width="62" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -166,7 +166,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6t0-ih-KLT">
-                                <rect key="frame" x="36" y="263" width="142" height="142"/>
+                                <rect key="frame" x="96" y="263" width="142" height="142"/>
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="selecciona el tipo de masa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scX-N8-7Ek">
@@ -174,6 +174,14 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gruesa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka7-oC-eBc">
+                                <rect key="frame" x="288" y="612" width="59" height="21"/>
+                                <animations/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -211,16 +219,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdo-3I-8oF">
-                                <rect key="frame" x="41" y="541" width="42" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mhw-l1-Tdp">
+                                <rect key="frame" x="-1" y="64" width="375" height="603"/>
                                 <animations/>
-                                <state key="normal" title="Mozarela" image="imgChico.png"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdo-3I-8oF">
+                                <rect key="frame" x="43" y="563" width="42" height="42"/>
+                                <animations/>
+                                <state key="normal" title="Mozarela" image="img_mozzarela.png"/>
                                 <connections>
                                     <action selector="tipoQuesButtons:" destination="ayT-4o-7Ja" eventType="touchUpInside" id="uD6-ev-M1a"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mozarela" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G78-O2-eAT">
-                                <rect key="frame" x="31" y="586" width="63" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mozzarella" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G78-O2-eAT">
+                                <rect key="frame" x="27" y="611" width="74" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -228,15 +240,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hld-6c-gIM">
-                                <rect key="frame" x="133" y="541" width="42" height="42"/>
+                                <rect key="frame" x="135" y="563" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="Cheddar" image="imgChico.png"/>
+                                <state key="normal" title="Cheddar" image="img_cheddar.png"/>
                                 <connections>
                                     <action selector="tipoQuesButtons:" destination="ayT-4o-7Ja" eventType="touchUpInside" id="2jG-Wu-6iq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cheddar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrN-LU-ZYu">
-                                <rect key="frame" x="124" y="589" width="62" height="21"/>
+                                <rect key="frame" x="125" y="611" width="62" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -244,15 +256,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6em-DX-IAg">
-                                <rect key="frame" x="215" y="541" width="42" height="42"/>
+                                <rect key="frame" x="217" y="563" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="Parmesano" image="imgChico.png"/>
+                                <state key="normal" title="Parmesano" image="img_parmesano.png"/>
                                 <connections>
                                     <action selector="tipoQuesButtons:" destination="ayT-4o-7Ja" eventType="touchUpInside" id="nN5-SS-ODs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parmesano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fms-lg-VeN">
-                                <rect key="frame" x="198" y="589" width="77" height="21"/>
+                                <rect key="frame" x="200" y="611" width="77" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -260,15 +272,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ge9-ji-afX">
-                                <rect key="frame" x="298" y="541" width="42" height="42"/>
+                                <rect key="frame" x="300" y="563" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="SinQueso" image="imgChico.png"/>
+                                <state key="normal" title="SinQueso" image="img_sinQueso.png"/>
                                 <connections>
                                     <action selector="tipoQuesButtons:" destination="ayT-4o-7Ja" eventType="touchUpInside" id="6Su-cY-maI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sin queso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX6-4T-Hnv">
-                                <rect key="frame" x="286" y="589" width="68" height="21"/>
+                                <rect key="frame" x="287" y="611" width="68" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -276,11 +288,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQ2-0W-Ei1">
-                                <rect key="frame" x="70" y="161" width="128" height="128"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6p-TX-UiW">
-                                <rect key="frame" x="178" y="159" width="130" height="130"/>
+                                <rect key="frame" x="83" y="261" width="128" height="128"/>
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona el tipo de queso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ul-C1-2Fk">
@@ -290,6 +298,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l6p-TX-UiW">
+                                <rect key="frame" x="83" y="261" width="130" height="130"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -325,32 +337,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-FK-9dc">
-                                <rect key="frame" x="165" y="448" width="42" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypz-JH-kgh">
+                                <rect key="frame" x="-0.5" y="64" width="375" height="603"/>
                                 <animations/>
-                                <state key="normal" title="peperoni" image="imgChico.png"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondo_Ingredientes.png" translatesAutoresizingMaskIntoConstraints="NO" id="MeA-KO-o23">
+                                <rect key="frame" x="20" y="500" width="341" height="70"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-FK-9dc">
+                                <rect key="frame" x="166" y="481" width="42" height="42"/>
+                                <animations/>
+                                <state key="normal" title="peperoni" image="img_peperoni.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="0qx-lR-LJe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16I-Js-aSE">
-                                <rect key="frame" x="288" y="448" width="42" height="42"/>
+                                <rect key="frame" x="289" y="481" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="pavo" image="imgChico.png"/>
+                                <state key="normal" title="pavo" image="img_pavo.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="EO4-iM-KwE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8us-pM-PrK">
-                                <rect key="frame" x="46" y="537" width="42" height="42"/>
+                                <rect key="frame" x="47" y="570" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="salchicha" image="imgChico.png"/>
+                                <state key="normal" title="salchicha" image="img_salchicha.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="bA7-wc-WsJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jamon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaO-hU-EaH">
-                                <rect key="frame" x="34" y="493" width="63" height="21"/>
+                                <rect key="frame" x="35" y="526" width="63" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -358,7 +378,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salchicha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPK-K6-26N">
-                                <rect key="frame" x="34" y="585" width="68" height="21"/>
+                                <rect key="frame" x="35" y="618" width="68" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -366,7 +386,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pavo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xe-LV-3v1">
-                                <rect key="frame" x="271" y="496" width="77" height="21"/>
+                                <rect key="frame" x="272" y="529" width="77" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -374,23 +394,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peperoni" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmL-iz-SiP">
-                                <rect key="frame" x="156" y="496" width="62" height="21"/>
+                                <rect key="frame" x="157" y="529" width="62" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3de-2t-U2O">
-                                <rect key="frame" x="287" y="534" width="42" height="42"/>
-                                <animations/>
-                                <state key="normal" title="cebolla" image="imgChico.png"/>
-                                <connections>
-                                    <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="aco-ba-zxN"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cebolla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="et6-EX-vtH">
-                                <rect key="frame" x="275" y="582" width="68" height="21"/>
+                                <rect key="frame" x="280" y="615" width="68" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -398,35 +410,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scV-Q5-tQh">
-                                <rect key="frame" x="44" y="448" width="42" height="42"/>
+                                <rect key="frame" x="45" y="481" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="jamon" image="imgChico.png"/>
+                                <state key="normal" title="jamon" image="img_jamon.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="HdP-uh-mGz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRB-wU-cv2">
-                                <rect key="frame" x="166" y="532" width="42" height="42"/>
+                                <rect key="frame" x="167" y="565" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="aceitunas" image="imgChico.png"/>
+                                <state key="normal" title="aceitunas" image="img_aceitunas.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="hzv-aC-g79"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aceitunas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykc-Le-6dj">
-                                <rect key="frame" x="153" y="582" width="68" height="21"/>
+                                <rect key="frame" x="154" y="615" width="68" height="21"/>
                                 <animations/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-dn-GVr">
+                                <rect key="frame" x="115" y="262" width="130" height="130"/>
+                                <animations/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKG-ns-vs4">
-                                <rect key="frame" x="137" y="262" width="130" height="120"/>
+                                <rect key="frame" x="115" y="262" width="130" height="130"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68p-Hr-KA6">
-                                <rect key="frame" x="44" y="296" width="130" height="120"/>
+                                <rect key="frame" x="115" y="262" width="130" height="130"/>
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona tus ingredientes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEz-F9-Dnq">
@@ -436,10 +452,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWe-dn-GVr">
-                                <rect key="frame" x="233" y="227" width="130" height="120"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3de-2t-U2O">
+                                <rect key="frame" x="289" y="565" width="42" height="42"/>
                                 <animations/>
-                            </imageView>
+                                <state key="normal" title="cebolla" image="img_cebolla.png"/>
+                                <connections>
+                                    <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="aco-ba-zxN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -476,6 +496,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tamaño_fondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="smN-wP-XP4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <animations/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamaño:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYd-Fu-GUW">
                                 <rect key="frame" x="32" y="95" width="66" height="21"/>
                                 <animations/>
@@ -532,16 +556,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggw-L8-kS9">
+                                <rect key="frame" x="20" y="550" width="328" height="42"/>
+                                <animations/>
+                                <state key="normal" title="Cocinar"/>
+                                <connections>
+                                    <action selector="cocinarButton:" destination="QtY-HF-Jkw" eventType="touchUpInside" id="cex-gQ-y1L"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBg-SY-9am">
-                                <rect key="frame" x="32" y="348" width="143" height="119"/>
+                                <rect key="frame" x="116" y="289" width="151" height="151"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-oZ-ghR">
-                                <rect key="frame" x="104" y="328" width="143" height="119"/>
+                                <rect key="frame" x="116" y="289" width="151" height="151"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wET-yG-XkZ">
-                                <rect key="frame" x="176" y="293" width="143" height="119"/>
+                                <rect key="frame" x="116" y="289" width="151" height="151"/>
                                 <animations/>
                             </imageView>
                         </subviews>
@@ -556,6 +588,9 @@
                         <outlet property="masaField" destination="8Pe-cx-PBA" id="Hsp-a0-yZV"/>
                         <outlet property="quesoField" destination="zHt-Qc-FSJ" id="Oc2-bA-dl5"/>
                         <outlet property="tamanoField" destination="zta-rd-obB" id="Ry3-yf-Xsk"/>
+                        <outlet property="viewTipoIngredientes" destination="wET-yG-XkZ" id="C3O-MO-ywT"/>
+                        <outlet property="viewTipoMasa" destination="bBg-SY-9am" id="Rrj-1E-LHR"/>
+                        <outlet property="viewTipoQueso" destination="5Ax-oZ-ghR" id="qyl-FO-kCX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6H-1n-zgq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -582,7 +617,7 @@
             </objects>
             <point key="canvasLocation" x="3585.5" y="912.5"/>
         </scene>
-        <!--Mi_pizza-->
+        <!--Inicio View Controller-->
         <scene sceneID="zjc-LI-6pk">
             <objects>
                 <viewController id="cD9-DH-ZWA" customClass="InicioViewController" customModule="Mi_pizza" customModuleProvider="target" sceneMemberID="viewController">
@@ -594,19 +629,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fJ-Gb-OAI">
-                                <rect key="frame" x="147" y="362" width="71" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="oGD-fx-YTh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <animations/>
-                                <state key="normal" title="Comenzar"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fJ-Gb-OAI">
+                                <rect key="frame" x="91" y="557" width="193" height="54"/>
+                                <animations/>
+                                <state key="normal" title="Comenzar" image="buttonComenzar.png"/>
                                 <connections>
                                     <action selector="ViewToTamaño:" destination="cD9-DH-ZWA" eventType="touchUpInside" id="efQ-jy-ruw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crea la pizza de tus sueños en 4 pasos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1j-ap-p5P">
+                                <rect key="frame" x="92" y="438" width="190" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.83137254901960789" green="0.59828663315586161" blue="0.013943807412342262" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Mi_pizza" id="qnp-QN-OJJ"/>
+                    <navigationItem key="navigationItem" id="qnp-QN-OJJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5y-rr-hhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -638,6 +684,7 @@
         <!--Navigation Controller-->
         <scene sceneID="YRp-Rf-bsl">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ms-hb-NjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YaB-HK-ImH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -651,16 +698,30 @@
                         <segue destination="cD9-DH-ZWA" kind="relationship" relationship="rootViewController" id="OC6-Zc-YWw"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1ms-hb-NjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306.5" y="919.5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="buttonComenzar.png" width="584" height="188"/>
         <image name="first" width="30" height="30"/>
-        <image name="imgChico.png" width="78" height="80"/>
-        <image name="imgGrande.png" width="127" height="127"/>
-        <image name="imgMediano.png" width="105" height="104"/>
+        <image name="fondo_Ingredientes.png" width="1032" height="234"/>
+        <image name="img_aceitunas.png" width="366" height="355"/>
+        <image name="img_cebolla.png" width="366" height="355"/>
+        <image name="img_cheddar.png" width="366" height="355"/>
+        <image name="img_jamon.png" width="365" height="355"/>
+        <image name="img_mozzarela.png" width="365" height="355"/>
+        <image name="img_parmesano.png" width="366" height="355"/>
+        <image name="img_pavo.png" width="366" height="355"/>
+        <image name="img_peperoni.png" width="366" height="355"/>
+        <image name="img_salchicha.png" width="365" height="355"/>
+        <image name="img_sinQueso.png" width="366" height="355"/>
+        <image name="inicio.png" width="1125" height="2000"/>
+        <image name="masaCrujiente.png" width="826" height="866"/>
+        <image name="masaDelgada.png" width="826" height="866"/>
+        <image name="masaGruesa.png" width="826" height="866"/>
         <image name="second" width="30" height="30"/>
+        <image name="tamaño_fondo.png" width="1125" height="2000"/>
+        <image name="tamaño_masa.png" width="835" height="864"/>
     </resources>
 </document>
