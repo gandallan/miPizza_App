@@ -44,6 +44,8 @@
 		81EF121B1BF9A2B700321BB8 /* cocinarButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF121A1BF9A2B700321BB8 /* cocinarButton.png */; };
 		81EF122A1BFA1A8500321BB8 /* tamano_fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12281BFA1A8500321BB8 /* tamano_fondo.png */; };
 		81EF122B1BFA1A8500321BB8 /* tamano_masa.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12291BFA1A8500321BB8 /* tamano_masa.png */; };
+		81EF122E1BFA463A00321BB8 /* imagenesOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF122C1BFA463A00321BB8 /* imagenesOn.png */; };
+		81EF122F1BFA463A00321BB8 /* imagenesOnOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF122D1BFA463A00321BB8 /* imagenesOnOff.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		81EF121A1BF9A2B700321BB8 /* cocinarButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cocinarButton.png; sourceTree = "<group>"; };
 		81EF12281BFA1A8500321BB8 /* tamano_fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tamano_fondo.png; sourceTree = "<group>"; };
 		81EF12291BFA1A8500321BB8 /* tamano_masa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tamano_masa.png; sourceTree = "<group>"; };
+		81EF122C1BFA463A00321BB8 /* imagenesOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagenesOn.png; sourceTree = "<group>"; };
+		81EF122D1BFA463A00321BB8 /* imagenesOnOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagenesOnOff.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 		8102DAFE1BF00FE700E1AE3C /* Ingredientes */ = {
 			isa = PBXGroup;
 			children = (
+				81EF122C1BFA463A00321BB8 /* imagenesOn.png */,
+				81EF122D1BFA463A00321BB8 /* imagenesOnOff.png */,
 				81EF120A1BF99C2A00321BB8 /* img_aceitunas.png */,
 				81EF120B1BF99C2A00321BB8 /* img_cebolla.png */,
 				81EF120C1BF99C2A00321BB8 /* img_jamon.png */,
@@ -369,10 +375,12 @@
 				81EF12151BF99C2A00321BB8 /* img_salchicha.png in Resources */,
 				81EF12031BF9934F00321BB8 /* img_cheddar.png in Resources */,
 				81EF122A1BFA1A8500321BB8 /* tamano_fondo.png in Resources */,
+				81EF122E1BFA463A00321BB8 /* imagenesOn.png in Resources */,
 				81EF12071BF9943B00321BB8 /* img_sinQueso.png in Resources */,
 				81552D2A1BE9D688003AE02F /* imgChico.png in Resources */,
 				81EF11F11BF97E2500321BB8 /* inicio.png in Resources */,
 				81552D281BE9D688003AE02F /* imgGrande.png in Resources */,
+				81EF122F1BFA463A00321BB8 /* imagenesOnOff.png in Resources */,
 				81EF12141BF99C2A00321BB8 /* img_peperoni.png in Resources */,
 				81552D291BE9D688003AE02F /* imgMediano.png in Resources */,
 				81EF11ED1BF97CD000321BB8 /* buttonComenzar.png in Resources */,

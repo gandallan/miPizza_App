@@ -21,6 +21,7 @@ class IngredientesViewController: UIViewController {
     
     @IBOutlet var nextButton: UIBarButtonItem!
     
+    @IBOutlet var defaultSwitch: UISwitch!
     
 //***************************************** VARIABLES
     var botones = " "
@@ -28,6 +29,16 @@ class IngredientesViewController: UIViewController {
     var imageMasa: UIImage!
     var imageQueso: UIImage!
     var imageIngredientes:UIImage!
+    
+    var sel:[Bool] = [false,false,false,false,false,false]
+    
+    var sel2:[Int] = []
+    
+    let imagenes : [UIImage] = [UIImage(named:"img_jamon")!,UIImage(named:"img_peperoni")!,UIImage(named:"img_pavo")!,UIImage(named:"img_salchicha")!,UIImage(named:"img_aceitunas")!,UIImage(named:"img_cebolla")!]
+    
+    var cuenta: Int = 0
+    //let jamon : UIImage = UIImage(named:"img_jamon")!
+    //let pavo : UIImage = UIImage(named:"img_pavo")!
     
 //    let ingredientes:[String:String] = [
 //    
@@ -53,6 +64,10 @@ class IngredientesViewController: UIViewController {
         // Do any additional setup after loading the view.
         //myScrollView.contentSize.height = 0
         //myScrollView.contentSize.width = 20000
+        
+        
+        
+
     }
 
 
@@ -63,71 +78,34 @@ class IngredientesViewController: UIViewController {
         
         
         
-        
         botones = (sender.titleLabel?.text!)!
         
         switch botones {
         
             case "jamon":
-                
-                viewTipoIngredientes.image = UIImage(named: "img_jamon")
-                
-                fieldIngrediente = "jamon"
-                
-                nextButton.enabled = true
+            
+                anadirImage(0)
             
             case "peperoni":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_peperoni")
-                
-                fieldIngrediente = "peperoni"
-                
-                nextButton.enabled = true
-            
-            print("peperoni")
+                anadirImage(1)
             
             case "pavo":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_pavo")
-                
-                fieldIngrediente = "pavo"
-                
-                nextButton.enabled = true
-            
-            print("pavo")
+                anadirImage(2)
             
             case "salchicha":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_salchicha")
-                
-                fieldIngrediente = "salchicha"
-                
-                nextButton.enabled = true
-
-                
-            print("salchicha")
+                anadirImage(3)
             
             case "aceitunas":
-                
-                viewTipoIngredientes.image = UIImage(named: "img_aceitunas")
-                
-                fieldIngrediente = "aceitunas"
-                
-                nextButton.enabled = true
-                
-            
-            print("aceitunas")
-            
+
+                anadirImage(4)
+
             case "cebolla":
                 
-                viewTipoIngredientes.image = UIImage(named: "img_cebolla")
-                
-                fieldIngrediente = "cebolla"
-                
-                nextButton.enabled = true
+                anadirImage(5)
 
-            
-            print("cebolla")
             
         default:
             
@@ -135,8 +113,9 @@ class IngredientesViewController: UIViewController {
         
         }
         
-        
+    
     }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -148,8 +127,69 @@ class IngredientesViewController: UIViewController {
     
     }
     
-  
+    //*********************************** Function Añadir
     
+    func anadirImage(pos:Int){
+        print(sel2.count)
+        
+        sel[pos] = !sel[pos]
+        //sel2.append(pos)
+        
+        if(sel[pos]) {
+            if(sel2.count>4){
+                return
+            };
+            sel2.append(pos)
+        } else {
+        
+        if let index = sel2.indexOf(pos) {
+            sel2.removeAtIndex(index)
+        }
+        }
+        
+        // if cuenta > 4 {   return; }
+        
+        nextButton.enabled = true
+        
+        viewTipoIngredientes.image = imageIngredientes
+    
+        UIGraphicsBeginImageContext(imageMasa.size)
+        
+        let areaSize = CGRect(x: 0, y: 0, width: imageMasa.size.width, height: imageMasa.size.height)
+        
+        viewTipoIngredientes.image?.drawInRect(areaSize)
+        
+        for ii in sel2 {
+        imagenes[ii].drawInRect(areaSize)
+        }
+        
+        
+        /*var i = 0
+        cuenta = 0
+        for index in sel{
+            
+            if index == true{
+                
+                imagenes[i].drawInRect(areaSize)
+                cuenta++
+                
+            }
+            i++
+            
+        }
+        
+        print(cuenta)*/
+        //imageIngredientes.drawInRect(areaSize)
+        
+        
+        
+        viewTipoIngredientes.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+    }
+    
+    
+   
+  
     
     
     
