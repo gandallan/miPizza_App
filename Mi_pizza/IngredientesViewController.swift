@@ -24,6 +24,7 @@ class IngredientesViewController: UIViewController {
     @IBOutlet var defaultSwitch: UISwitch!
     
 //***************************************** VARIABLES
+    
     var botones = " "
     
     var imageMasa: UIImage!
@@ -75,8 +76,7 @@ class IngredientesViewController: UIViewController {
     
     
     @IBAction func ingredientesBotones(sender: UIButton) {
-        
-        
+
         
         botones = (sender.titleLabel?.text!)!
         
@@ -113,6 +113,8 @@ class IngredientesViewController: UIViewController {
         
         }
         
+
+        
     
     }
     
@@ -127,24 +129,40 @@ class IngredientesViewController: UIViewController {
     
     }
     
-    //*********************************** Function Añadir
+    //*********************************** Function AñadirImagenIngrediente
     
     func anadirImage(pos:Int){
+        
         print(sel2.count)
         
         sel[pos] = !sel[pos]
         //sel2.append(pos)
         
+        
         if(sel[pos]) {
-            if(sel2.count>4){
+            
+            if(sel2.count > 4){
+                
+                showAlert()
+                
+               
+                print(sel2)
+                
                 return
+                
             };
+            
             sel2.append(pos)
+            fieldIngrediente = String( "\(botones)")
+            print(fieldIngrediente)
+        
         } else {
         
         if let index = sel2.indexOf(pos) {
+            
             sel2.removeAtIndex(index)
-        }
+        
+            }
         }
         
         // if cuenta > 4 {   return; }
@@ -160,7 +178,10 @@ class IngredientesViewController: UIViewController {
         viewTipoIngredientes.image?.drawInRect(areaSize)
         
         for ii in sel2 {
+            
         imagenes[ii].drawInRect(areaSize)
+
+            
         }
         
         
@@ -186,8 +207,39 @@ class IngredientesViewController: UIViewController {
         viewTipoIngredientes.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
     }
+    func showingreditenes(){
+        
+        fieldIngrediente = botones
+        
+        
+    }
     
+//*************************************************** Alert
     
+    @IBAction func showAlert() {
+        
+        
+        
+        let alerta = UIAlertController(title: "", message: "Sólo 5 ingredientes Máximo", preferredStyle: .Alert)
+        
+//        let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel){
+//            (action:UIAlertAction!) in
+//            
+//            print("pulsaste cancelar")
+//        }
+        
+        let OkAction = UIAlertAction(title: "OK", style: .Default){
+            (action:UIAlertAction!) in
+            
+            print("pulsaste Ok")
+        }
+        
+        alerta.addAction(OkAction)
+        
+        self.presentViewController(alerta, animated: true, completion: nil)
+        
+        
+    }
    
   
     
