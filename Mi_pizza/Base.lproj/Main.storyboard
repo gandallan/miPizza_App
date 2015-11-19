@@ -348,7 +348,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-FK-9dc">
                                 <rect key="frame" x="166" y="481" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="peperoni" image="img_peperoni.png"/>
+                                <state key="normal" title="peperoni" image="icon-peperoni.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="0qx-lR-LJe"/>
                                 </connections>
@@ -356,7 +356,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16I-Js-aSE">
                                 <rect key="frame" x="289" y="481" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="pavo" image="img_pavo.png"/>
+                                <state key="normal" title="pavo" image="icon_pavo.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="EO4-iM-KwE"/>
                                 </connections>
@@ -364,7 +364,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8us-pM-PrK">
                                 <rect key="frame" x="47" y="570" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="salchicha" image="img_salchicha.png"/>
+                                <state key="normal" title="salchicha" image="icon_salchicha.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="bA7-wc-WsJ"/>
                                 </connections>
@@ -412,7 +412,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scV-Q5-tQh">
                                 <rect key="frame" x="45" y="481" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="jamon" image="img_jamon.png"/>
+                                <state key="normal" title="jamon" image="icon_jamon.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="HdP-uh-mGz"/>
                                 </connections>
@@ -420,7 +420,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRB-wU-cv2">
                                 <rect key="frame" x="167" y="565" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="aceitunas" image="img_aceitunas.png"/>
+                                <state key="normal" title="aceitunas" image="icon_aceitunas.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="hzv-aC-g79"/>
                                 </connections>
@@ -455,7 +455,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3de-2t-U2O">
                                 <rect key="frame" x="289" y="565" width="42" height="42"/>
                                 <animations/>
-                                <state key="normal" title="cebolla" image="img_cebolla.png"/>
+                                <state key="normal" title="cebolla" image="icon_cebolla.png"/>
                                 <connections>
                                     <action selector="ingredientesBotones:" destination="ch1-iS-YPS" eventType="touchUpInside" id="aco-ba-zxN"/>
                                 </connections>
@@ -708,15 +708,15 @@
         <image name="first" width="30" height="30"/>
         <image name="fondoConformacion.png" width="1125" height="2000"/>
         <image name="fondo_Ingredientes.png" width="1032" height="234"/>
-        <image name="img_aceitunas.png" width="366" height="355"/>
-        <image name="img_cebolla.png" width="366" height="355"/>
+        <image name="icon-peperoni.png" width="366" height="355"/>
+        <image name="icon_aceitunas.png" width="366" height="355"/>
+        <image name="icon_cebolla.png" width="366" height="355"/>
+        <image name="icon_jamon.png" width="365" height="355"/>
+        <image name="icon_pavo.png" width="366" height="355"/>
+        <image name="icon_salchicha.png" width="365" height="355"/>
         <image name="img_cheddar.png" width="366" height="355"/>
-        <image name="img_jamon.png" width="365" height="355"/>
         <image name="img_mozzarela.png" width="365" height="355"/>
         <image name="img_parmesano.png" width="366" height="355"/>
-        <image name="img_pavo.png" width="366" height="355"/>
-        <image name="img_peperoni.png" width="366" height="355"/>
-        <image name="img_salchicha.png" width="365" height="355"/>
         <image name="img_sinQueso.png" width="366" height="355"/>
         <image name="inicio.png" width="1125" height="2000"/>
         <image name="masaCrujiente.png" width="826" height="866"/>

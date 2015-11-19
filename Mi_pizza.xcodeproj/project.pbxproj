@@ -55,6 +55,12 @@
 		81EF12991BFB763400321BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12981BFB763400321BB8 /* Assets.xcassets */; };
 		81EF129D1BFB763400321BB8 /* miPizzaWatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 81EF127F1BFB763400321BB8 /* miPizzaWatchOS.app */; };
 		81EF12A71BFD77A300321BB8 /* TamanoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EF12A61BFD77A300321BB8 /* TamanoPicker.swift */; };
+		81EF12B11BFD926300321BB8 /* icon_aceitunas.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12AB1BFD926300321BB8 /* icon_aceitunas.png */; };
+		81EF12B21BFD926300321BB8 /* icon_cebolla.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12AC1BFD926300321BB8 /* icon_cebolla.png */; };
+		81EF12B31BFD926300321BB8 /* icon_jamon.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12AD1BFD926300321BB8 /* icon_jamon.png */; };
+		81EF12B41BFD926300321BB8 /* icon_pavo.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12AE1BFD926300321BB8 /* icon_pavo.png */; };
+		81EF12B51BFD926300321BB8 /* icon_salchicha.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12AF1BFD926300321BB8 /* icon_salchicha.png */; };
+		81EF12B61BFD926300321BB8 /* icon-peperoni.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF12B01BFD926300321BB8 /* icon-peperoni.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +177,12 @@
 		81EF12981BFB763400321BB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81EF129A1BFB763400321BB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81EF12A61BFD77A300321BB8 /* TamanoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamanoPicker.swift; sourceTree = "<group>"; };
+		81EF12AB1BFD926300321BB8 /* icon_aceitunas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_aceitunas.png; sourceTree = "<group>"; };
+		81EF12AC1BFD926300321BB8 /* icon_cebolla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_cebolla.png; sourceTree = "<group>"; };
+		81EF12AD1BFD926300321BB8 /* icon_jamon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_jamon.png; sourceTree = "<group>"; };
+		81EF12AE1BFD926300321BB8 /* icon_pavo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pavo.png; sourceTree = "<group>"; };
+		81EF12AF1BFD926300321BB8 /* icon_salchicha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_salchicha.png; sourceTree = "<group>"; };
+		81EF12B01BFD926300321BB8 /* icon-peperoni.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-peperoni.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +266,7 @@
 		81552D241BE9D64A003AE02F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				81EF12AA1BFD924E00321BB8 /* icon_ingredientes */,
 				81EF12281BFA1A8500321BB8 /* tamano_fondo.png */,
 				81EF12291BFA1A8500321BB8 /* tamano_masa.png */,
 				81EF12181BF9A22D00321BB8 /* fondoConformacion.png */,
@@ -362,6 +375,19 @@
 				81EF12911BFB763400321BB8 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81EF12AA1BFD924E00321BB8 /* icon_ingredientes */ = {
+			isa = PBXGroup;
+			children = (
+				81EF12AB1BFD926300321BB8 /* icon_aceitunas.png */,
+				81EF12AC1BFD926300321BB8 /* icon_cebolla.png */,
+				81EF12AD1BFD926300321BB8 /* icon_jamon.png */,
+				81EF12AE1BFD926300321BB8 /* icon_pavo.png */,
+				81EF12AF1BFD926300321BB8 /* icon_salchicha.png */,
+				81EF12B01BFD926300321BB8 /* icon-peperoni.png */,
+			);
+			name = icon_ingredientes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -520,15 +546,18 @@
 				81E051B71BE9B34A00255155 /* LaunchScreen.storyboard in Resources */,
 				81EF12101BF99C2A00321BB8 /* img_aceitunas.png in Resources */,
 				81EF12091BF9964500321BB8 /* fondo_Ingredientes.png in Resources */,
+				81EF12B21BFD926300321BB8 /* icon_cebolla.png in Resources */,
 				81E051B41BE9B34A00255155 /* Assets.xcassets in Resources */,
 				81EF12151BF99C2A00321BB8 /* img_salchicha.png in Resources */,
 				81EF12031BF9934F00321BB8 /* img_cheddar.png in Resources */,
 				81EF122A1BFA1A8500321BB8 /* tamano_fondo.png in Resources */,
+				81EF12B41BFD926300321BB8 /* icon_pavo.png in Resources */,
 				81EF122E1BFA463A00321BB8 /* imagenesOn.png in Resources */,
 				81EF12071BF9943B00321BB8 /* img_sinQueso.png in Resources */,
 				81552D2A1BE9D688003AE02F /* imgChico.png in Resources */,
 				81EF11F11BF97E2500321BB8 /* inicio.png in Resources */,
 				81552D281BE9D688003AE02F /* imgGrande.png in Resources */,
+				81EF12B11BFD926300321BB8 /* icon_aceitunas.png in Resources */,
 				81EF122F1BFA463A00321BB8 /* imagenesOnOff.png in Resources */,
 				81EF12141BF99C2A00321BB8 /* img_peperoni.png in Resources */,
 				81552D291BE9D688003AE02F /* imgMediano.png in Resources */,
@@ -541,10 +570,13 @@
 				81EF12111BF99C2A00321BB8 /* img_cebolla.png in Resources */,
 				81EF12121BF99C2A00321BB8 /* img_jamon.png in Resources */,
 				81EF12131BF99C2A00321BB8 /* img_pavo.png in Resources */,
+				81EF12B51BFD926300321BB8 /* icon_salchicha.png in Resources */,
 				81EF12051BF9934F00321BB8 /* img_parmesano.png in Resources */,
 				81E051B21BE9B34A00255155 /* Main.storyboard in Resources */,
 				81EF121B1BF9A2B700321BB8 /* cocinarButton.png in Resources */,
+				81EF12B61BFD926300321BB8 /* icon-peperoni.png in Resources */,
 				81EF122B1BFA1A8500321BB8 /* tamano_masa.png in Resources */,
+				81EF12B31BFD926300321BB8 /* icon_jamon.png in Resources */,
 				81EF11FF1BF98F6100321BB8 /* masaCrujiente.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
