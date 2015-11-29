@@ -31,7 +31,12 @@ class IngredientesViewController: UIViewController {
     var imageQueso: UIImage!
     var imageIngredientes:UIImage!
     
+    var nombres:String?
+    
+    var nombresIngredientes:[String?] = ["Jamon", "Peperoni", "Pavo", "Salchicha", "Aceitunas", "Cebolla"]
+    
     var sel:[Bool] = [false,false,false,false,false,false]
+    
     
     var sel2:[Int] = []
     
@@ -153,8 +158,10 @@ class IngredientesViewController: UIViewController {
             };
             
             sel2.append(pos)
-            fieldIngrediente = String( "\(botones)")
-            print(fieldIngrediente)
+            
+           // fieldIngrediente = String( "\(botones)")
+            
+           // print(fieldIngrediente)
         
         } else {
         
@@ -177,12 +184,19 @@ class IngredientesViewController: UIViewController {
         
         viewTipoIngredientes.image?.drawInRect(areaSize)
         
+        nombres = " "
+        
         for ii in sel2 {
             
         imagenes[ii].drawInRect(areaSize)
+    
+            
+        nombres = (nombres!) + "\(nombresIngredientes[ii]!),"
 
             
         }
+        
+        fieldIngrediente = String(nombres!.characters.dropLast())
         
         
         /*var i = 0

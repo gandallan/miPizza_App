@@ -46,7 +46,7 @@ class MasaViewController: UIViewController {
         switch(tamano){
             
         case 1:
-            self.tamañoPizza.frame = CGRectMake(100, 250,100, 100)
+            self.tamañoPizza.frame = CGRectMake(100, 270,100, 100)
             self.view.addSubview(self.tamañoPizza!)
         
             tam=CGSizeMake(100,100)
@@ -55,7 +55,7 @@ class MasaViewController: UIViewController {
             
         case 2:
             
-            self.tamañoPizza.frame = CGRectMake(100, 250,150, 150)
+            self.tamañoPizza.frame = CGRectMake(100, 270,150, 150)
             self.view.addSubview(self.tamañoPizza!)
            
             tam=CGSizeMake(150,150)
@@ -65,7 +65,7 @@ class MasaViewController: UIViewController {
             
         case 3:
             
-            self.tamañoPizza.frame = CGRectMake(100, 250,200, 200)
+            self.tamañoPizza.frame = CGRectMake(100, 270,200, 200)
             self.view.addSubview(self.tamañoPizza!)
             
             tam=CGSizeMake(200, 200)
