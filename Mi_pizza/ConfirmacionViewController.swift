@@ -67,7 +67,7 @@ class ConfirmacionViewController: UIViewController {
     
     @IBAction func cocinarButton(sender: UIButton) {
         
-        let alerta = UIAlertController(title: "Confirmación", message: "Estas seguro que quieres mandar a concinar tu pizza", preferredStyle: .ActionSheet)
+        let alerta = UIAlertController(title: "Confirmación", message: "Estas seguro que quieres mandar a cocinar tu pizza", preferredStyle: .ActionSheet)
         
         let cancelAction = UIAlertAction(title: "Cancelar", style: .Cancel){
             (action:UIAlertAction!) in
