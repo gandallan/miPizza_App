@@ -138,7 +138,7 @@ class IngredientesViewController: UIViewController {
     
     func anadirImage(pos:Int){
         
-        print(sel2.count)
+        //print(sel2.count)
         
         sel[pos] = !sel[pos]
         //sel2.append(pos)
